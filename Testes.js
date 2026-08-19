@@ -10,15 +10,20 @@ import {Agenda} from './Agenda.js';
 funcionario.descreverFuncao()*/
 
 //teste 2 - Certo
-const medico = new Medico("João", "001", 20000, "CRM12345");
+/*const medico = new Medico("João", "001", 20000, "CRM12345");
 const secretaria = new Secretaria("Ana", "002", 4000, 15);
 
 console.log("Salário inicial do médico", medico.getSalario());
 medico.setSalario(180000);
-console.log("Novo salário após atualização:", medico.getSalario());
+console.log("Novo salário após atualização:", medico.getSalario());*/
 
-//Teste 3
-//const funcionario = [Medico, secretaria]
+//Teste 3 - Certo
+/*const medico = new Medico("João", "001", 20000, "CRM12345");
+const secretaria = new Secretaria("Ana", "002", 4000, 15);
+const funcionario = [medico, secretaria];
+funcionario.forEach(funcionario => {
+    console.log(`${funcionario.nome}: ${funcionario.descreverFuncao()}`);
+});*/
 
 //Teste 4 - Certo
 /*const medico = new Medico("João", "001", 20000, "CRM12345");
