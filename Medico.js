@@ -6,7 +6,7 @@ export class Medico extends Funcionario{
         this.especialidades = [];
 }
     descreverFuncao(){
-        return "Médico"
+        return "Médico - Responsável por diagnosticar e cuidar do paciente."
     }
     adicionarEspecialidade(especialidade){
         this.especialidades.push(especialidade);
