@@ -10,11 +10,11 @@ import {Agenda} from './Agenda.js';
 funcionario.descreverFuncao()*/
 
 //teste 2 - Certo
-/*const medico = new Medico("João", "001", 20000, "CRM12345");
+/*const medico = new Medico("João", "001", 18000, "CRM12345");
 const secretaria = new Secretaria("Ana", "002", 4000, 15);
 
 console.log("Salário inicial do médico", medico.getSalario());
-medico.setSalario(180000);
+medico.setSalario(200000);
 console.log("Novo salário após atualização:", medico.getSalario());*/
 
 //Teste 3 - Certo
@@ -38,7 +38,12 @@ medico.adicionarEspecialidade(cardiologista);
 console.log(oftamologista);*/
 
 //Teste 5
-/*const medico = new Medico("João", "001", 20000, "CRM12345");
-const secretaria = new Secretaria("Ana", "002", 4000, 15);
+/*const secretaria = new Secretaria("Ana", "002", 4000, 15);
 
-const agendamento*/
+secretaria.criarAgendamento("20/08/2026", "Consulta cardiológica", "Dr. Carlos");
+secretaria.criarAgendamento("22/08/2026", "Consulta oftamológica", "Dr. Pedro");
+
+console.log(secretaria.descreverFuncao());
+secretaria.agendamento.forEach((item, index) => {
+  console.log(`Agendamento ${index + 1}:`, item.obterDetalhes());
+});*/
