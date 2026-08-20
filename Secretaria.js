@@ -1,4 +1,5 @@
 import {Funcionario} from './Funcionario.js';
+import { Agenda } from './Agenda.js';
 export class Secretaria extends Funcionario{
     constructor(nome, idFuncional, salario, ramal){
         super(nome, idFuncional, salario);
@@ -6,9 +7,16 @@ export class Secretaria extends Funcionario{
         this.agendamento = [];
 }
     descreverFuncao(){
-        return "Secretaria"
+        return "Secretária - Responsável pelo atendimento, organização e gerenciamento de agendamentos.";
     }
-    criarAgendamento(data, descricao, reponsavel){
-        this.agendamento.push(data, descricao, reponsavel);
-    }
+    criarAgendamento(data, descricao, responsavel){
+         const novaAgenda = new Agenda(
+            data,
+            descricao,
+            responsavel
+        );
+            this.agendamento.push(novaAgenda);
+        
+            return novaAgenda;
+        }
 }
