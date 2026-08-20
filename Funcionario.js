@@ -10,8 +10,8 @@ export class Funcionario{
         this.#salario= salario;
     }
 
-    getSalario(){return this.#salario} //erro consertado
-    setSalario(novoSalario){this.#salario = novoSalario} //erro consertado
+    getSalario(){return this.#salario} 
+    setSalario(novoSalario){this.#salario = novoSalario}
 
     descreverFuncao() {
         throw new Error("O metodo descreverFuncao() deve ser implementado pela subclasse");
